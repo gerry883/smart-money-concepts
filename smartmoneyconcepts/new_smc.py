@@ -479,7 +479,7 @@ class smc:
         bos = np.where(bos != 0, bos, np.nan)
         choch = np.where(choch != 0, choch, np.nan)
         bos_level = np.where(bos_level != 0, bos_level, np.nan)
-        broken_index = np.where(broken_index != 0, bos_level, np.nan)
+        broken_index = np.where(broken_index != 0, broken_index, np.nan)
 
         bos = pd.Series(bos, name="BOS")
         choch = pd.Series(choch, name="CHOCH")
